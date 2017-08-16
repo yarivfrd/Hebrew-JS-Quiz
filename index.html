@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="utf-8">
+    <title>JS Knowledge Quiz</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Suez+One&amp;subset=hebrew" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;subset=hebrew" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+      <div class="question-card">
+        <div class="inner-container">
+          <h2 class="question"></h2>
+          <div class="current-question"></div>
+          <form class="answers-form">
+            <input type="radio" id="Answer1" name="answer" value="0" onclick="quest.catchSelection(this)">
+            <label for="Answer1"></label>
+            <br/>
+            <input type="radio" id="Answer2" name="answer" value="1" onclick="quest.catchSelection(this)">
+            <label for="Answer2"></label>
+            <br/>
+            <input type="radio" id="Answer3" name="answer" value="2" onclick="quest.catchSelection(this)">
+            <label for="Answer3"></label>
+          </form>
+          <div class="nav">
+            <button class="previous-question" type="button">הקודמת</button>
+            <button class="calculate-mark" type="button">סיימתי</button>
+            <button class="next-question" type="button">הבאה</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="results-card"></div>
+
+
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
