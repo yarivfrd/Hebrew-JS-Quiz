@@ -16,7 +16,6 @@ quest.totalQuest = 0;
 // Get initial data from JSON
 quest.getQuestNum = $.ajax({url: "questions.json" ,complete: (xhr,status) => {
     let jsonContent = xhr.responseJSON;
-    console.log(jsonContent);
 
     // Set total number of questions
     quest.totalQuest  = 10;
